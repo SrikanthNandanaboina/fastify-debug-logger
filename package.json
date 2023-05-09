@@ -1,0 +1,46 @@
+{
+  "name": "fastify-debug-logger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "module": "dist/index.m.js",
+  "unpkg": "dist/index.umd.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    "require": "./dist/index.js",
+    "default": "./dist/index.modern.js"
+  },
+  "scripts": {
+    "build": "rm -rf dist && microbundle --tsconfig tsconfig.json --no-sourcemap",
+    "dev": "microbundle --watch --tsconfig tsconfig.json --no-sourcemap"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SrikanthNandanaboina/fastify-debug-logger.git"
+  },
+  "author": "Srikanth Nandanaboina",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SrikanthNandanaboina/fastify-debug-logger/issues"
+  },
+  "homepage": "https://github.com/SrikanthNandanaboina/fastify-debug-logger#readme",
+  "devDependencies": {
+    "@types/uuid": "^9.0.1",
+    "@types/winston": "^2.4.4",
+    "@types/lodash": "^4.14.191",
+    "microbundle": "0.15.0",
+    "ts-node": "^10.9.1"
+  },
+  "dependencies": {
+    "fastify-plugin": "^4.5.0",
+    "lodash": "^4.17.21",
+    "moment-timezone": "^0.5.43",
+    "path": "^0.12.7",
+    "uuid": "^9.0.0",
+    "winston": "^3.8.2",
+    "winston-transport": "^4.5.0"
+  },
+  "files": [
+    "dist"
+  ]
+}
